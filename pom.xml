@@ -12,8 +12,9 @@
 
     <properties>
         <java.version>11</java.version>
-        <spring-boot.version>2.2.3.BUILD-SNAPSHOT</spring-boot.version>
+        <spring-boot.version>2.2.3.RELEASE</spring-boot.version>
         <surfire-plugin.version>3.0.0-M3</surfire-plugin.version>
+        <embedded-redis.version>0.6</embedded-redis.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>11</maven.compiler.source>
@@ -27,6 +28,11 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.github.kstyrc</groupId>
+                <artifactId>embedded-redis</artifactId>
+                <version>${embedded-redis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

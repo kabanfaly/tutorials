@@ -17,7 +17,7 @@ public class CapsuleLoader implements CommandLineRunner {
     private final ReactiveRedisOperations<String, Capsule> capsulOperations;
 
     @Override
-    public void run(String... strings) throws Exception {
+    public void run(String... strings) {
         factory.getReactiveConnection().serverCommands().flushAll().thenMany(
             Flux.just("Capsule 1", "Capsule 2", "Capsule 3")
                 .map(content -> new Capsule(UUID.randomUUID().toString(), content))
