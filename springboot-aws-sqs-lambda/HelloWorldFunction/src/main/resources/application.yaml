@@ -1,10 +1,6 @@
 cloud:
   aws:
-    region:
-      static: us-east-1
-      auto: false
-    stack:
-      auto: false
+    region: us-east-1
     credentials:
       access-key: ${ACCESS_KEY}
       secret-key: ${SECRET_KEY}
