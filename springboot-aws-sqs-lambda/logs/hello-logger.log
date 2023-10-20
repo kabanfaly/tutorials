@@ -1,0 +1,56 @@
+2023-10-20 00:57:57,015 INFO  [main] Application: Starting Application using Java 11.0.15 on NFalys-MacBook-Pro.local with PID 80160 (/Users/nfalykaba/Workspace/AWS/sqs-lambda/HelloWorldFunction/target/classes started by nfalykaba in /Users/nfalykaba/Workspace/AWS/sqs-lambda)
+2023-10-20 00:57:57,026 INFO  [main] Application: No active profile set, falling back to 1 default profile: "default"
+2023-10-20 00:57:57,845 DEBUG [main] InternalConfig: Configuration override awssdk_config_override.json not found.
+2023-10-20 00:57:57,901 DEBUG [main] AmazonWebServiceClient: Internal logging successfully configured to commons logger: true
+2023-10-20 00:57:58,051 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@5c53f292: Unable to load Client Side Monitoring configurations from environment variables!
+2023-10-20 00:57:58,051 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@46fb0c33: Unable to load Client Side Monitoring configurations from system properties variables!
+2023-10-20 00:57:58,052 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@3b009e7b: The 'default' profile does not define all the required properties!
+2023-10-20 00:57:58,225 DEBUG [main] Mappings: 
+	h.c.HelloController:
+	{GET [/]}: hello()
+	{POST [/add]}: addHello(String)
+2023-10-20 00:57:58,228 DEBUG [main] Mappings: 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2023-10-20 00:57:58,232 DEBUG [main] Mappings: 'beanNameHandlerMapping' {}
+2023-10-20 00:57:58,240 DEBUG [main] Mappings: 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2023-10-20 00:57:58,299 INFO  [main] Application: Started Application in 1.933 seconds (JVM running for 2.337)
+2023-10-20 01:03:00,854 INFO  [main] Application: Starting Application using Java 11.0.15 on NFalys-MacBook-Pro.local with PID 80680 (/Users/nfalykaba/Workspace/AWS/sqs-lambda/HelloWorldFunction/target/classes started by nfalykaba in /Users/nfalykaba/Workspace/AWS/sqs-lambda)
+2023-10-20 01:03:00,855 INFO  [main] Application: No active profile set, falling back to 1 default profile: "default"
+2023-10-20 01:03:01,540 DEBUG [main] InternalConfig: Configuration override awssdk_config_override.json not found.
+2023-10-20 01:03:01,587 DEBUG [main] AmazonWebServiceClient: Internal logging successfully configured to commons logger: true
+2023-10-20 01:03:01,709 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@7364eed1: Unable to load Client Side Monitoring configurations from environment variables!
+2023-10-20 01:03:01,710 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@684e8c9d: Unable to load Client Side Monitoring configurations from system properties variables!
+2023-10-20 01:03:01,710 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@6ecc02bb: The 'default' profile does not define all the required properties!
+2023-10-20 01:03:01,865 DEBUG [main] Mappings: 
+	h.c.HelloController:
+	{GET [/]}: hello()
+	{POST [/add]}: addHello(String)
+2023-10-20 01:03:01,866 DEBUG [main] Mappings: 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2023-10-20 01:03:01,870 DEBUG [main] Mappings: 'beanNameHandlerMapping' {}
+2023-10-20 01:03:01,878 DEBUG [main] Mappings: 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2023-10-20 01:03:01,935 INFO  [main] Application: Started Application in 1.551 seconds (JVM running for 1.909)
+2023-10-20 01:04:03,381 INFO  [http-nio-8080-exec-1] HelloController: Hello Hello
+2023-10-20 01:04:22,272 INFO  [main] Application: Starting Application using Java 11.0.15 on NFalys-MacBook-Pro.local with PID 80739 (/Users/nfalykaba/Workspace/AWS/sqs-lambda/HelloWorldFunction/target/classes started by nfalykaba in /Users/nfalykaba/Workspace/AWS/sqs-lambda)
+2023-10-20 01:04:22,280 INFO  [main] Application: No active profile set, falling back to 1 default profile: "default"
+2023-10-20 01:04:22,991 DEBUG [main] InternalConfig: Configuration override awssdk_config_override.json not found.
+2023-10-20 01:04:23,037 DEBUG [main] AmazonWebServiceClient: Internal logging successfully configured to commons logger: true
+2023-10-20 01:04:23,151 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@3cdc7b09: Unable to load Client Side Monitoring configurations from environment variables!
+2023-10-20 01:04:23,151 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@7364eed1: Unable to load Client Side Monitoring configurations from system properties variables!
+2023-10-20 01:04:23,152 DEBUG [main] CsmConfigurationProviderChain: Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@684e8c9d: The 'default' profile does not define all the required properties!
+2023-10-20 01:04:23,306 DEBUG [main] Mappings: 
+	h.c.HelloController:
+	{GET [/]}: hello()
+	{POST [/add]}: addHello(String)
+2023-10-20 01:04:23,308 DEBUG [main] Mappings: 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2023-10-20 01:04:23,312 DEBUG [main] Mappings: 'beanNameHandlerMapping' {}
+2023-10-20 01:04:23,320 DEBUG [main] Mappings: 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+2023-10-20 01:04:23,370 INFO  [main] Application: Started Application in 1.624 seconds (JVM running for 1.928)
+2023-10-20 01:04:51,701 INFO  [http-nio-8080-exec-3] HelloController: Hello Hello
