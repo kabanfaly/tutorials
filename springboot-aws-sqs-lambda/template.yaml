@@ -28,7 +28,9 @@ Resources:
       MemorySize: 512
       Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
         Variables:
-          PARAM1: VALUE
+          END_POINT_URI: https://sqs.us-east-1.amazonaws.com/703217496716/mySqsQueue
+          ACCESS_KEY: AKIA2HOYHOKGP4ZGWSVA
+          SECRET_KEY:
           JAVA_TOOL_OPTIONS: -XX:+TieredCompilation -XX:TieredStopAtLevel=1 # More info about tiered compilation https://aws.amazon.com/blogs/compute/optimizing-aws-lambda-function-performance-for-java/
       Events:
         HelloWorld:
