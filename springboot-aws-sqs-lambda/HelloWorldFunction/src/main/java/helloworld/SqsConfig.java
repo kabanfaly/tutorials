@@ -1,6 +1,5 @@
 package helloworld;
 
-import com.amazonaws.auth.AWSCredentialsProvider;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.sqs.AmazonSQSAsync;
@@ -18,21 +17,15 @@ public class SqsConfig {
 
     @Bean
     @Primary
-    public AmazonSQSAsync amazonSQSAsync(@Value("${cloud.aws.region.static}") String awsRegion, AWSCredentialsProvider credentialsProvider) {
+    public AmazonSQSAsync amazonSQSAsync(@Value("${cloud.aws.region}") String awsRegion,
+                                         @Value("${cloud.aws.credentials.access-key}") String accessKey,
+                                         @Value("${cloud.aws.credentials.secret-key}") String secretKey) {
+        var credentials = new BasicAWSCredentials(accessKey, secretKey);
         return AmazonSQSAsyncClientBuilder
                 .standard()
-                .withCredentials(credentialsProvider)
+                .withCredentials(new AWSStaticCredentialsProvider(credentials))
                 .withRegion(awsRegion)
                 .build();
-    }
-
-    @Bean
-    public AWSCredentialsProvider credentialsProvider(
-            @Value("${cloud.aws.credentials.access-key}") String accessKey,
-            @Value("${cloud.aws.credentials.secret-key}") String secretKey) {
-
-        BasicAWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
-        return new AWSStaticCredentialsProvider(credentials);
     }
 
 
