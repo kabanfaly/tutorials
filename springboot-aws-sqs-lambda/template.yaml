@@ -29,8 +29,8 @@ Resources:
       Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
         Variables:
           END_POINT_URI: https://sqs.us-east-1.amazonaws.com/703217496716/mySqsQueue
-          ACCESS_KEY: abcv
-          SECRET_KEY: ddddd
+          ACCESS_KEY:
+          SECRET_KEY:
           JAVA_TOOL_OPTIONS: -XX:+TieredCompilation -XX:TieredStopAtLevel=1 # More info about tiered compilation https://aws.amazon.com/blogs/compute/optimizing-aws-lambda-function-performance-for-java/
       Events:
         HelloWorld:
@@ -38,4 +38,15 @@ Resources:
           Properties:
             Path: /{proxy+}
             Method: ANY
+
+  MyServiceFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: AwsSpring
+      Handler: com.kaba.handler.ApplicationHandler::handleRequest
+      Runtime: java11
+      Architectures:
+        - x86_64
+      MemorySize: 512
+
 

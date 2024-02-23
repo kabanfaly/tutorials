@@ -29,6 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
-
+*.toml
 
 *.aws-sam
